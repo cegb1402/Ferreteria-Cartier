@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context="SQL.AgregarProductosSQL">
+
+  <ImageView
+      android:id="@+id/imagenProductoSQL"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:gravity="center"
+      android:layout_marginBottom="80dp"
+      android:layout_marginTop="80dp"
+      android:layout_marginLeft="115dp"
+      android:src="@drawable/cargar_img" />
+
+  <EditText
+      android:backgroundTint="@color/white"
+      android:layout_below="@id/imagenProductoSQL"
+      android:id="@+id/etCodigoSQL"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="70dp"
+      android:layout_marginRight="70dp"
+      android:ellipsize="start"
+      android:gravity="center"
+      android:hint="Codigo"
+      android:inputType="number"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white" />
+
+  <EditText
+      android:backgroundTint="@color/white"
+      android:id="@+id/etNombreSQL"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@id/etCodigoSQL"
+      android:layout_marginLeft="70dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="70dp"
+      android:ellipsize="start"
+      android:gravity="center"
+      android:hint="Nombre"
+      android:inputType="text"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white" />
+
+  <EditText
+      android:backgroundTint="@color/white"
+      android:id="@+id/etCantidadSQL"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@id/etNombreSQL"
+      android:layout_marginLeft="70dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="70dp"
+      android:ellipsize="start"
+      android:gravity="center"
+      android:hint="Cantidad"
+      android:inputType="number"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white" />
+
+  <EditText
+      android:backgroundTint="@color/white"
+      android:id="@+id/etPrecioSQL"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_below="@id/etCantidadSQL"
+      android:layout_marginLeft="70dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginRight="70dp"
+      android:ellipsize="start"
+      android:gravity="center"
+      android:hint="Precio"
+      android:inputType="numberDecimal"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:textColorHint="@color/white" />
+
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_width="387dp"
+      android:layout_height="715dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="0dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRegresarSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="20dp"
+        android:elevation="3dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:backgroundTint="@color/white"
+        app:borderWidth="4dp"
+        tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnGuardarSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:elevation="3dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:backgroundTint="@color/white"
+        app:borderWidth="4dp"
+        tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="invisible"
+        android:id="@+id/btnActualizarSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:elevation="3dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:backgroundTint="@color/white"
+        app:borderWidth="4dp"
+        tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="invisible"
+        android:id="@+id/btnEliminarSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="20dp"
+        android:elevation="3dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:backgroundTint="@color/white"
+        app:borderWidth="4dp"
+        tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

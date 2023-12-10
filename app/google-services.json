@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809512707438",
+    "project_id": "ferreteria-cartier",
+    "storage_bucket": "ferreteria-cartier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809512707438:android:c9c278887cc33443f48d7f",
+        "android_client_info": {
+          "package_name": "com.trabajo.ferreteriacartier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkkE7XXnyunt--bp-1Ktq1qJRQrVYAlCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
